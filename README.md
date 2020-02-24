@@ -43,7 +43,9 @@ Unidirection flow
          create('item2');
          create('item3');
          create('item4');
-
+   //output is 
+   state [{'0': 'n'}]
+   //new tem across 7
       
    Reducer 
    
@@ -64,7 +66,8 @@ Unidirection flow
          let state = reducer([], {type:'CREATE_ITEM, payload: {title:'new item'})};
          console.log('state', state);              
          
-   //new output is  state[{title: 'new item'}];
+   //new output is  
+         state[{title: 'new item'}];
 
    Store 
    
