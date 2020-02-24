@@ -115,3 +115,16 @@ Unidirection flow
       
    
              
+  Summary
+  Listener is a view component 
+  button function with data is captured and has been encapsulated into an action which is an object
+  that action has a type that says create an item but it also has a payload property.
+  paypload  consists of data that we ust entered 
+  then we take action and we call a recuser
+  reducer grabs the previous state and also new action as a paramter
+  the job of the reducer is take previous state and this action and merge them together 
+  that generates new state of the store..
+  now we need to notify all parties that the method change has occured a tthis point we need to broadcast it to any listeners who listens that the change has occured
+  Listerns notifies all parties. 
+  
+         
