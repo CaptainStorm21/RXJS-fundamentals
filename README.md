@@ -85,7 +85,31 @@ Unidirection flow
       * contains state
       * only reducers can change the state
       
-  
+   //store 
+      state = {
+         list: [],
+         user: void 0,
+      }
+      
+   //dispatch 
+    const  dispatch = (action) => {
+         //change
+         listeners.forEach(element => {
+              l();
+         });
+      }
+      let listeners = []
+   //select
+   const   select = (fn)  => fn(state)
+      
+      function selector (state) {
+         return state.list
+      }
+      
+   //subscribe 
+    const  subscribe = (listeners) => {
+         listeners.push(listener);
+      }
       
    
              
