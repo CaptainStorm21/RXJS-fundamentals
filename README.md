@@ -51,6 +51,7 @@ Unidirection flow
       * immutable 
       
 //reducer 
+
          function reducer (prevState, action) {
            switch(action.type){
              case "CREATE_ITEM":
