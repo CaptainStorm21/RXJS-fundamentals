@@ -25,6 +25,26 @@ Unidirection flow
           - payload -new data
       * is an object
       
+      //action
+
+         const action = { 
+           type: 'CREATE_ITEM',
+           payload: 'new item'
+         }
+
+         //action creator 
+
+         create = (item) => 
+         ({ type : 'CREATE_ITEM',
+            payload: item
+         });
+
+         create('item1');
+         create('item2');
+         create('item3');
+         create('item4');
+
+      
    Reducer 
    
       * a function Reducer (previousState, action){} - produces new state
