@@ -50,6 +50,21 @@ Unidirection flow
       * a function Reducer (previousState, action){} - produces new state
       * immutable 
       
+//reducer 
+         function reducer (prevState, action) {
+           switch(action.type){
+             case "CREATE_ITEM":
+                return [...prevState, {...action.payload} ];
+             default:
+                return prevState;
+           }
+         }
+
+         let state = reducer([], {type:'CREATE_ITEM, payload: {title:'new item'})};
+         console.log('state', state);              
+         
+   //new output is  state[{title: 'new item'}];
+
    Store 
    
       * updates all listeners - broadcasts to all listeners
