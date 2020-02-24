@@ -23,7 +23,17 @@ Unidirection flow
           - select type
           - payload -new data
       * is an object
+      
    Reducer 
+   
       * a function Reducer (previousState, action){} - produces new state
-      * 
+      * immutable 
+      
+   Store 
+      * updates all listeners - broadcasts to all listeners
+      * contains state
+      * only reducers can change the state
+      
+      
+   
              
