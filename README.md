@@ -31,6 +31,7 @@ Unidirection flow
       * immutable 
       
    Store 
+   
       * updates all listeners - broadcasts to all listeners
       * contains state
       * only reducers can change the state
