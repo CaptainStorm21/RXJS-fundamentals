@@ -15,7 +15,9 @@ Unidirection flow
  then the stoage notifies the controllers then off to UI (it reads indirectlyy from the storage) ===> storage is changed
  
  Redux 
+ 
     Action 
+    
       * has type 
       * represents intention from our user
           - select type
