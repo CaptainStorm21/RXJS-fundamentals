@@ -63,18 +63,26 @@ Unidirection flow
            }
          }
 
-         let state = reducer([], {type:'CREATE_ITEM, payload: {title:'new item'})};
-         console.log('state', state);              
-         
+         let state = reducer([], {type:'CREATE_ITEM, payload: {title:'new item'}});
+         console.log('state', state);        
    //new output is  
          state[{title: 'new item'}];
-
+         
+  //new record 
+        state = reducer (state, {type:'CREATE_ITEM, payload: {title:'new item2'}});
+         
+   //new output is  
+         state[{title: 'new item'},
+                {title: 'new item 2}
+         ];
+         
    Store 
    
       * updates all listeners - broadcasts to all listeners
       * contains state
       * only reducers can change the state
       
+  
       
    
              
