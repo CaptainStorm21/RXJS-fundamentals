@@ -92,7 +92,9 @@ Unidirection flow
       }
       
    //dispatch 
+   
     const  dispatch = (action) => {
+    
          //change
          listeners.forEach(element => {
               l();
