@@ -9,6 +9,7 @@ UI ->
    
 Unidirection flow 
  
+ 
                    controller has       storage 
  ui creates item ==>  list items ===> (common component - publish / subscribe) === Payload which is new data
   
