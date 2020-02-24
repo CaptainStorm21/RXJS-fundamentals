@@ -19,3 +19,6 @@ console.log('sum', res1);
 //output is 14
 res = add(double(2), 10);
 console.log('sum', res);
+
+
+//functions rely only on function params therefore there is no mutation
